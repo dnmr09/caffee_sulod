@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Café Sulod · Coffee in Iloilo City</title>
+<meta name="description" content="Locally roasted coffee, Ilonggo-inspired drinks and a warm corner in Iloilo City.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">Café <span>Sulod</span></a>
+      <button id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul id="links">
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Iloilo City · Specialty Coffee</p>
+      <h1>Pasulod. Coffee’s on.</h1>
+      <p>Small-batch beans from Philippine highlands, brewed slow and served with a little Ilonggo warmth. Stay for the pastries, the air-con, and the good Wi-Fi.</p>
+      <a class="btn" href="#menu">See the menu</a><a class="btn ghost" href="#visit">Find us</a>
+      <div class="status"><span class="dot" id="dot"></span><span id="statusText">Checking hours…</span></div>
+    </div>
+    <div class="cup" aria-hidden="true">☕</div>
+  </section>
+
+  <section id="about">
+    <div class="wrap grid2">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h2>A corner of Iloilo to slow down.</h2>
+        <p>“Sulod” means <em>come in</em> in Hiligaynon, and that’s the whole idea. We roast in small batches, partner with Philippine coffee growers, and pair every cup with something baked fresh each morning.</p>
+        <p>Whether you’re walking the Esplanade, between classes, or finishing a batchoy run in Jaro, there’s a seat with your name on it.</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b>100%</b><span>Philippine-grown beans</span></div>
+        <div class="fact"><b>Daily</b><span>Fresh-baked pastries</span></div>
+        <div class="fact"><b>Free</b><span>Fast Wi-Fi &amp; outlets</span></div>
+        <div class="fact"><b>Cozy</b><span>Air-conditioned seating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">The menu</p>
+      <h2>Brewed for the tropics.</h2>
+      <div class="tabs" id="tabs" role="group" aria-label="Menu categories"></div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit">
+    <div class="wrap grid2">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2>Find your seat.</h2>
+        <p>📍 A.Abeto mirasol st., Iloilo City<br>📞 09123456789<br>✉️ coffesulod@gmail.com</p>
+        <p style="color:var(--muted)">Near the Iloilo River Esplanade. Replace the bracketed details with your real info.</p>
+      </div>
+      <table id="hours" aria-label="Opening hours"></table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap" style="max-width:560px">
+      <p class="eyebrow">Say hello</p>
+      <h2>Reservations &amp; events</h2>
+      <p style="color:var(--muted)">Planning a birthday, meetup or study group? Send us a note.</p>
+      <form id="form">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <textarea name="msg" rows="4" placeholder="How can we help?" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <p id="thanks">Salamat! We’ll get back to you soon. ☕</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Café Sulod · Made with ☕ in Iloilo City</footer>
+
+<script src="brain.js"></script>
+</body>
+</html>
